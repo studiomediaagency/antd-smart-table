@@ -1,6 +1,6 @@
-import React, {useState} from "react";
-import {Button, Input, Table, DatePicker} from "antd";
-import {FilterFilled, SearchOutlined} from "@ant-design/icons";
+import React, { useState } from "react";
+import { Button, Input, Table, DatePicker } from "antd";
+import { FilterFilled, SearchOutlined } from "@ant-design/icons";
 import Highlighter from "react-highlight-words";
 import moment from "moment";
 
@@ -11,17 +11,12 @@ export default function SmartTable(props) {
 	});
 
 	const getSearchColumnProps = (dataIndex, dateRange) => ({
-		filterDropdown: ({
-			                 setSelectedKeys,
-			                 selectedKeys,
-			                 confirm,
-			                 clearFilters,
-		                 }) => (
-			<div style={{padding: 8}}>
+		filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
+			<div style={{ padding: 8 }}>
 				{dateRange ? (
 					<>
 						<DatePicker.RangePicker
-							style={{width: 300, marginBottom: 8}}
+							style={{ width: 300, marginBottom: 8 }}
 							onChange={e => setSelectedKeys([e[0] + "/" + e[1]])}
 							onPressEnter={() => handleSearch(selectedKeys, confirm, dataIndex)}
 							ranges={{
