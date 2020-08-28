@@ -1,5 +1,5 @@
 {
-  "name": "antd-smart-table",
+  "name": "@studio-media-agency/antd-smart-table",
   "version": "0.1.0",
   "private": true,
   "babel": {
