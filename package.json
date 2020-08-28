@@ -1,7 +1,7 @@
 {
   "name": "@studio-media-agency/antd-smart-table",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "babel": {
     "presets": [
       "@babel/preset-react"
